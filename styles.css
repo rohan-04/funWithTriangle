@@ -13,7 +13,7 @@ body {
 	color: var(--secondary-color);
 }
 
-.container {
+.nav-container {
 	padding: 0rem 1rem;
 }
 
@@ -59,7 +59,7 @@ body {
 	padding: 0rem 0.5rem;
 }
 
-.triangle-container {
+.container {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
@@ -80,7 +80,8 @@ label {
 	border: none;
 }
 
-#is-triangle-btn {
+#is-triangle-btn,
+#submit-answer-btn {
 	padding: 0.5rem 1rem;
 	color: white;
 	background-color: var(--secondary-color);
@@ -92,4 +93,39 @@ label {
 	margin-top: 1rem;
 	font-weight: bold;
 	font-size: 1.5rem;
+}
+
+.question-container {
+	margin-bottom: 1.5rem;
+}
+
+.footer {
+	margin-top: 1.5rem;
+	background-color: var(--secondary-color);
+	color: white;
+	text-align: center;
+	padding: 2rem 1rem;
+	border-top-right-radius: 1rem;
+}
+
+.list-non-bullet {
+	list-style: none;
+}
+
+.list-item-inline {
+	display: inline;
+	padding: 0rem 0.5rem;
+}
+
+.footer .link {
+	color: white;
+}
+
+.footer .footer-header {
+	font-weight: bold;
+	font-size: large;
+}
+
+.footer ul {
+	padding-inline-start: 0px;
 }
