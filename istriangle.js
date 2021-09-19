@@ -11,6 +11,6 @@ isTriangleButton.addEventListener('click', function isTriangle() {
 	if (sum === 180) {
 		output.innerText = 'It is a triangle 🥳';
 	} else {
-		output.innerText = 'Angles does not form a triangle 📐😔';
+		output.innerText = 'Angles does not form a triangle 😔';
 	}
 });

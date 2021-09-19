@@ -72,7 +72,8 @@ label {
 	margin-bottom: 0.5rem;
 }
 
-.angle-input {
+.angle-input,
+.side {
 	padding: 0.8rem;
 	width: 70%;
 	margin-bottom: 1.5rem;
@@ -81,8 +82,9 @@ label {
 }
 
 #is-triangle-btn,
-#submit-answer-btn {
-	padding: 0.5rem 1rem;
+#submit-answer-btn,
+#hypotenuse-btn {
+	padding: 0.8rem 1.2rem;
 	color: white;
 	background-color: var(--secondary-color);
 	border: none;
@@ -99,33 +101,5 @@ label {
 	margin-bottom: 1.5rem;
 }
 
-.footer {
-	margin-top: 1.5rem;
-	background-color: var(--secondary-color);
-	color: white;
-	text-align: center;
-	padding: 2rem 1rem;
-	border-top-right-radius: 1rem;
-}
-
-.list-non-bullet {
-	list-style: none;
-}
-
-.list-item-inline {
-	display: inline;
-	padding: 0rem 0.5rem;
-}
-
-.footer .link {
-	color: white;
-}
-
-.footer .footer-header {
-	font-weight: bold;
-	font-size: large;
-}
-
-.footer ul {
-	padding-inline-start: 0px;
+.container label {
 }
