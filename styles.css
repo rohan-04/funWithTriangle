@@ -83,7 +83,8 @@ label {
 
 #is-triangle-btn,
 #submit-answer-btn,
-#hypotenuse-btn {
+#hypotenuse-btn,
+#calulate-area-btn {
 	padding: 0.8rem 1.2rem;
 	color: white;
 	background-color: var(--secondary-color);
