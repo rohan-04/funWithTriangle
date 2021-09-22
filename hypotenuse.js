@@ -7,12 +7,17 @@ function calculateSumofSquares(a, b) {
 }
 
 function showHypotenuse() {
-	let hypotenuse = Math.sqrt(
-		calculateSumofSquares(Number(sides[0].value), Number(sides[1].value))
-	);
+	let sideOne = Number(sides[0].value);
+	let sideTwo = Number(sides[1].value);
 
-	hypotenuse = hypotenuse.toFixed(4);
-	output.innerText = 'Hypotenuse of triangle is ' + hypotenuse + ' 🤓';
+	if (sideOne >= 0 && sideTwo >= 0) {
+		let hypotenuse = Math.sqrt(calculateSumofSquares(sideOne, sideTwo));
+
+		hypotenuse = hypotenuse.toFixed(4);
+		output.innerText = 'Hypotenuse of triangle is ' + hypotenuse + ' 🤓';
+	} else {
+		output.innerText = 'Please enter only postive values 🙄';
+	}
 }
 
 hypotenuseBtn.addEventListener('click', showHypotenuse);
