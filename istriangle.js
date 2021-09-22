@@ -3,14 +3,18 @@ const isTriangleButton = document.querySelector('#is-triangle-btn');
 const output = document.querySelector('#output');
 
 isTriangleButton.addEventListener('click', function isTriangle() {
-	let sum = 0;
-	for (let i = 0; i < angles.length; i++) {
-		sum += Number(angles[i].value);
-	}
+	let angleOne = Number(angles[0].value);
+	let angleTwo = Number(angles[1].value);
+	let angleThree = Number(angles[2].value);
 
-	if (sum === 180) {
-		output.innerText = 'It is a triangle 🥳';
+	if (angleOne >= 0 && angleTwo >= 0 && angleThree >= 0) {
+		let sum = angleOne + angleTwo + angleThree;
+		if (sum === 180) {
+			output.innerText = 'It is a triangle 🥳';
+		} else {
+			output.innerText = 'Angles does not form a triangle 😔';
+		}
 	} else {
-		output.innerText = 'Angles does not form a triangle 😔';
+		output.innerText = 'Only enter positive values 🙄';
 	}
 });
